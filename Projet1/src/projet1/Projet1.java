@@ -5,6 +5,8 @@
  */
 package projet1;
 
+import Vue.Interface;
+
 /**
  *
  * @author Ghislain
@@ -16,7 +18,7 @@ public class Projet1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Interface fen=new Interface();
     }
     
 }
