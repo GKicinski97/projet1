@@ -42,6 +42,14 @@ public class Interface extends JFrame implements ActionListener{
     private JLabel hopital = new JLabel(new ImageIcon("images/hopital.bmp")); // images du menu
     private JLabel croix = new JLabel(new ImageIcon("images/croix.bmp"));
     
+    private JMenuBar barre_menu = new JMenuBar();
+    private JMenu menu = new JMenu("Menu");
+    private JMenuItem item1 = new JMenuItem("Afficher");
+    private JMenuItem item2 = new JMenuItem("Ajouter");
+     private JMenuItem item3 = new JMenuItem("Supprimer");
+    private JMenuItem item4 = new JMenuItem("Quitter");
+    
+    
     public Interface (){ // constructeur
         menu();
     }
@@ -55,9 +63,8 @@ public class Interface extends JFrame implements ActionListener{
         String util=utilisateur.getText();
         String MDP=mdp.getText();
       
-        bienvenue.setText("Vous avez cliqué sur le bouton 1");
       
-      if(util.equals("")||MDP.equals(""))
+      if(util.equals(""))
       {
           textebas.setForeground(Color.RED);
           textebas.setText("Erreur : veuillez saisir un nom d'utilisateur et un mot de passe");
@@ -71,6 +78,7 @@ public class Interface extends JFrame implements ActionListener{
       {
             try {
                 Connexion conn=new Connexion("hopital","root","");
+                fenetre();
             } catch (SQLException ex) {
                 Logger.getLogger(Interface.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ClassNotFoundException ex) {
@@ -100,11 +108,11 @@ public class Interface extends JFrame implements ActionListener{
     public void menu(){
         setTitle ("Interface");
     setSize (900, 250);
+    setLocation(500,400);
     getContentPane().add(pan); // ajouter le panneau dans la fenêtre
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    
+    setVisible(true); // fenetre visible
     //Mise en page des panels :
-    pan.setBackground(Color.BLUE);
     pan.setLayout(new BorderLayout()); // panel principal qui contient les autres
     pan.add(panhaut,BorderLayout.NORTH);
     pan.add(pancentre,BorderLayout.CENTER);
@@ -128,7 +136,28 @@ public class Interface extends JFrame implements ActionListener{
     pandroite.add(croix);
     bouton_ok.addActionListener(new listener());
     bouton_quitter.addActionListener(new listener2());
-    setVisible(true); // fenetre visible
+    
+    }
+    
+    public void fenetre(){
+        setSize(1500,1000);
+        setLocation(200,0);
+        panhaut.removeAll();
+        panbas.removeAll();
+        pangauche.removeAll();
+        pandroite.removeAll();
+        pancentre.removeAll();
+        setVisible(true);
+        menu.add(item1);
+        menu.add(item2);
+        menu.add(item3);
+        menu.add(item4);
+        barre_menu.add(menu);
+        barre_menu.setBackground(new Color(51, 153, 255));
+        menu.setBounds(500,0,100,100);
+        panhaut.add(barre_menu);
+        
+        
     }
     
 }
