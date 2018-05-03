@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mes notifications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #505050;
+      color: white;
+      padding: 15px;
+    }
+
+    couverture {
+      padding-left: 20%;
+      padding-right: 30px;
+      color: aqua;
+
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" ><img src="Icones/logo.png" width="125" height="50" align="middle" alt="Accueil"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <form class="navbar-form navbar-left" role="search"></br>
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Rechercher...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <ul class="nav navbar-nav" >
+        <li><a href="Accueil.php"><img src="Icones/accueil.ico" alt="Accueil"> Accueil </a></li>
+        <li><a href="Profil.html"><img src="Icones/profil.ico" alt="Mon Profil"> Mon Profil </a></li>
+        <li><a href="Reseau.php"><img src="Icones/reseau.ico" alt="Mon Réseau"> Mon Réseau </a></li>
+        <li class="active"><a href="Notification.html"><img src="Icones/notification.ico" alt="Notifications"> Notifications </a></li>
+        <li><a href="#"><img src="Icones/emploi.ico" alt="Emplois"> Emplois </a></li>
+        <li><a href="#"><img src="Icones/message.ico" alt="Messages"> Messages </a></li>
+        <li><a href="logout.php"><img src="Icones/deco.ico" alt="Se déconnecter"> Se déconnecter </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-xs-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading" align="center">Profil</div>
+            <div class="panel-body" align = "center"><img src="Icones/profil.png" class="img-responsive" style="width:140px;height:140px;" alt="Image" align="center"></div>
+            <div class="panel-footer" align="center">Parametrez votre photo de profil</div>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading" align="center">Publicite</div>
+                <div class="panel-body" align = "center"><img src="Images/coca.jpg" class="img-responsive" style="width:140px;height:140px;" alt="Image" align="center"></div>
+                <div class="panel-footer" align="center">Publicite</div>
+              </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row content">
+
+    <div class="panel panel-primary">
+            <div class="panel-heading" align="center">Vos notifications</div>
+
+        <div class="col-sm-4">
+        <div class="well">
+
+          <h4>Notification 1</h4>
+          <p>Vous avez ete tague sur une photo</p>
+
+        </div>
+        </div>
+
+          <div class="col-sm-4">
+            <div class="well">
+              <h4>Notifications 2</h4>
+              <p>Vous avez un evenement demain</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="well">
+              <h4>Notification 3</h4>
+              <p>Charles Henry a ete promu</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <h4>Notification 5</h4>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <h4>Notification 6</h4>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-sm-4">
+            <div class="well">
+            <h4>Notification 7</h4>
+              <p>...</p>
+
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+            <h4>Notification 8</h4>
+              <p>...</p>
+
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+            <h4>Notification 9</h4>
+              <p>...</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="well">
+            <h4>Notification 10</h4>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+            <h4>Notification 11</h4>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+        <p>The Workflow Media © | Tous droits reserves</p>
+      </footer>
+
+      </body>
+      </html>

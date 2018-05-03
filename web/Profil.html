@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mon Profil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #505050;
+      color: white;
+      padding: 15px;
+    }
+
+    couverture {
+      padding-left: 20%;
+      padding-right: 30px;
+      color: aqua;
+
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" ><img src="Icones/logo.png" width="125" height="50" align="middle" alt="Accueil"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <form class="navbar-form navbar-left" role="search"></br>
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Rechercher...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <ul class="nav navbar-nav" >
+        <li><a href="Accueil.php"><img src="Icones/accueil.ico" alt="Accueil"> Accueil </a></li>
+        <li class="active"><a href="Profil.html"><img src="Icones/profil.ico" alt="Mon Profil"> Mon Profil </a></li>
+        <li><a href="Reseau.php"><img src="Icones/reseau.ico" alt="Mon Réseau"> Mon Réseau </a></li>
+        <li><a href="Notification.html"><img src="Icones/notification.ico" alt="Notifications"> Notifications </a></li>
+        <li><a href="#"><img src="Icones/emploi.ico" alt="Emplois"> Emplois </a></li>
+        <li><a href="#"><img src="Icones/message.ico" alt="Messages"> Messages </a></li>
+        <li><a href="logout.php"><img src="Icones/deco.ico" alt="Se déconnecter"> Se déconnecter </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="couverture">
+    <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading" align="center">Photo de couverture</div>
+            <div class="panel-body"><img src="Icones/paysage.jpg" class="img-responsive" style="width:100%" alt="paysage"></div>
+            <div class="panel-footer" align="center">Parametrez votre photo de couverture</div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="profil_description">
+    <div class="row">
+        <div class="col-xs-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Photo de profil</div>
+            <div class="panel-body" align = "center"><img src="Icones/profil.png" class="img-responsive" style="width:140px;height:140px;" alt="Image" align="center"></div>
+            <div class="panel-footer" align="center">Parametrez votre photo de profil</div>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Description</div>
+              <div class="panel-body" align = "center">
+                <p>
+                  Bonjour, <br> Etudiant en 3e annee, je suis à la recherche d'un stage de 4 mois. Je suis :
+                  <ul>
+                    <li>Organise</li>
+                    <li>Determine</li>
+                    <li>Serieux</li>
+                    <li>Motive</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="panel-footer" align = "center">Parametrez votre Description</div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading" align="center">Vos photos</div>
+        <div class="container">
+
+            <section class="row">
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/1.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/2.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/3.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/4.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/5.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/6.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/7.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/8.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/9.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/10.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/11.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/12.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+            </section>
+
+          </div>
+        <div class="panel-footer" align="center">Modifiez vos photos</div>
+      </div>
+    </div>
+
+
+  </div>
+</div><br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading" align="center">Vos vidéos</div>
+          <div class="container">
+
+              <section class="row">
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BuIBguOUg0E" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/cWiPROxS2HA" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/34NjK6pRFiM" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/w-vzEEBDHA8" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/pZ7kWrTeu90" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/2KbeQ63_fTo" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/IdWYcLzVYcA" style="width:100px;height:100px;"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/kCGYQwmtYy8" style="width:100px;height:100px"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/6ZfuNTqbHE8" style="width:100px;height:100px"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/0hdnQ8EXdEs" style="width:100px;height:100px"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/KrAHaLkqfHY" style="width:100px;height:100px"> </iframe>
+                  </div>
+
+                  <div class="col-xs-4 col-sm-3 col-md-2">
+                      <iframe class="embed-responsive-item" src="https://youtube.com/embed/F8wcInY72RM" style="width:100px;height:100px"> </iframe>
+                  </div>
+
+              </section>
+
+            </div>
+          <div class="panel-footer" align="center">Modifiez vos vidéos</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" align="center">Vos publications</div>
+        <div class="container">
+
+            <section class="row">
+
+              <div class="col-xs-4 col-sm-3 col-md-2"><img src="Photos/1.jpg" alt="Tigre" style="width:100px;height:100px;"></div>
+
+              <div class="col-xs-4 col-sm-3 col-md-2">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/pYf5deeiPf4" width="100" height="100"></iframe>
+               </div>
+
+            </section>
+          </div>
+
+        <div class="panel-footer" align="center">Modifiez vos publications</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Experiences & Formations</div>
+        <div class="panel-body">
+            <h2>Experiences</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Experience</th>
+                  <th>Annee</th>
+                  <th>Entreprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Chef de Projet</td>
+                  <td>2015-2016</td>
+                  <td>Weblib</td>
+                </tr>
+                <tr>
+                  <td>Analyste</td>
+                  <td>2016-2017</td>
+                  <td>Thales</td>
+                </tr>
+                <tr>
+                  <td>Business Analyste</td>
+                  <td>Depuis 2017</td>
+                  <td>IBM</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Formations</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Formation</th>
+        <th>Annee</th>
+        <th>Ecole</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ingenieur SI</td>
+        <td>2010-2015</td>
+        <td>ECE Paris</td>
+      </tr>
+      <tr>
+        <td>Chef de Projet</td>
+        <td>CNAM</td>
+        <td>2015-2016</td>
+      </tr>
+      <tr>
+        <td>Business Analyst</td>
+        <td>ESCE</td>
+        <td>2017-2018</td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+        <div class="panel-footer" align = "center">Modifiez vos experiences & formations</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Competences & Realisations</div>
+        <div class="panel-body">
+            <h2>Competences</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Competence</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SQL</td>
+                  <td>JAVA</td>
+                  <td>JAVASCRIPT</td>
+                </tr>
+                <tr>
+                  <td>Gestion de projet</td>
+                  <td>C</td>
+                  <td>C++</td>
+                </tr>
+                <tr>
+                  <td>Pack Office</td>
+                  <td>Bootstrap</td>
+                  <td>HTML&CSS</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Realisations</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Realisation</th>
+        <th>Annee</th>
+        <th>Ecole/Entreprise</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Projet Domotique</td>
+        <td>2012</td>
+        <td>ECE Paris</td>
+      </tr>
+      <tr>
+        <td>Projet Snoopy</td>
+        <td>2013</td>
+        <td>ECE Paris</td>
+      </tr>
+      <tr>
+        <td>Projet Data</td>
+        <td>2014</td>
+        <td>CNAM</td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+        <div class="panel-footer" align = "center">Modifiez vos competences & realisations</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>The Workflow Media © | Tous droits reserves</p>
+</footer>
+
+</body>
+</html>
